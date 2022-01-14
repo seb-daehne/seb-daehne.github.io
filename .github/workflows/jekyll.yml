@@ -24,4 +24,4 @@ jobs:
     - name: upload
       run: |
         ls -la
-        curl -X PUT '@blog.tar' ${{ secrets.OCI_BUCKET_UPLOAD }}/blog/
+        curl -X PUT --data-binary '@blog.tar' ${{ secrets.OCI_BUCKET_UPLOAD }}/blog/
