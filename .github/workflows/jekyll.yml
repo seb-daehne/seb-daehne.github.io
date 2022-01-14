@@ -18,12 +18,8 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
-        
-  upload:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set the value
-        id: step_one
-        run: |
-         ls -la
-         curl https://httpbin.org/json
+
+    - name: upload
+      run: |
+        ls -la
+        curl https://httpbin.org/json
