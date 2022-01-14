@@ -22,4 +22,4 @@ jobs:
     - name: upload
       run: |
         ls -la
-        curl -X PUT '@_site/' $OCI_BUCKET_UPLOAD/blog/
+        curl -X PUT '@_site/' ${{ secrets.OCI_BUCKET_UPLOAD }}/blog/
