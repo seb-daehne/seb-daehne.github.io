@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  openvpn:
+  - apiVersion: v1
+    appVersion: 3.0.0
+    created: "2022-03-06T14:33:25.668844+01:00"
+    description: openvpn
+    digest: 391f34c6c65c9185be66af11f862968ec2026f7fb8f9ce237b7490323bf7a2a5
+    name: openvpn
+    urls:
+    - https://seb-daehne.github.io/charts/openvpn-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-03-06T14:33:25.667614+01:00"
